@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Diary</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:800px)"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:800px)"
+      href="wide.css"
+    />
   </head>
   <body>
     <header id="box-1" class="box header">
@@ -15,10 +24,10 @@
       </div>
       <div id="box-1-2" class="box header">
         <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="about.html"><li>About</li></a>
-          <li>Sample page</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Sample page</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="clr"></div>
@@ -53,6 +62,11 @@
             nostrum illum molestiae a neque minus.
           </p>
         </section>
+        <form action="/action_page.php">
+          <label for="search">Search:</label>
+          <input type="search" id="search" name="search" />
+          <input type="button" value="submit" />
+        </form>
         <section id="box-2-2" class="box section">
           <h2>This is content2</h2>
           <p>
@@ -125,7 +139,6 @@
         </div>
         <div class="clr"></div>
       </footer>
-      
     </main>
   </body>
 </html>
